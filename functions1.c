@@ -21,10 +21,8 @@ int print_unsigned(va_list types, char buffer[],
 
 	num = convert_size_unsgnd(num, size);
 
-
 	if (num == 0)
 		buffer[i--] = '0';
-
 
 	buffer[BUFF_SIZE - 1] = '\0';
 
@@ -73,9 +71,7 @@ int print_octal(va_list types, char buffer[],
 	if (num == 0)
 		buffer[i--] = '0';
 
-
-		buffer[BUFF_SIZE - 1] = '\0';
-
+	buffer[BUFF_SIZE - 1] = '\0';
 
 	while (num > 0)
 	{
@@ -163,7 +159,6 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	if (num == 0)
 		buffer[i--] = '0';
-
 
 	buffer[BUFF_SIZE - 1] = '\0';
 
